@@ -1,0 +1,137 @@
+:root {
+	--nav-background-color: #87CEEB!important;
+	--nav-hover-background-color: #00bcd4!important;
+	--header-text-color: #000!important;
+	--header-background-color: #00ffff!important;
+	--section-1-background-color: #00f2f2!important;
+	--section-2-background-color: #00e2e2!important;
+	--alt-text-color: #f1f1f1!important;
+}
+body,h1,h2,h3,h4,h5,h6 {
+	font-family: "Iceland"!important, sans-serif, font-size:36px;
+}
+.w3-bar,h1,button {
+	font-family: "Audiowide", sans-serif;
+}
+header{
+	color: var(--header-text-color);
+    background-color: var(--header-background-color);
+	padding:50px 16px!important;
+}
+.fa-anchor,.fa-coffee {
+	font-size:200px;
+}
+.display-none{
+	display:none;
+}
+#contactMeSection{
+	background-color: var(--section-2-background-color);
+}
+#aboutMeSection{
+	background-color: var(--section-1-background-color);
+}
+#aboutMeSection div div h1{
+	color: var(--alt-text-color);
+}
+#emailAddress{
+	color: var(--alt-text-color);
+}
+#project-download-link{
+	padding-left:2em;
+	font-size:16px;
+}
+#project-image{
+	max-height:400px;
+	max-width:400px;
+	
+	margin-left: 50px;
+	margin-top: 50px;
+}
+.link-inactive{
+	background-color: var(--header-background-color);
+	color: var(--alt-text-color);
+}
+#navBuffer{
+	background-color: var(--nav-background-color);
+}
+@media (max-width: 600px){
+	#navLarge .link-active{
+		display: none!important;
+	}
+}
+#navLarge .link-active{
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: normal;
+}
+.link-active:hover{
+	background-color: var(--nav-hover-background-color);
+}
+#navLarge{
+	background-color: var(--nav-background-color);
+}
+#navLarge a{
+	padding: 12px 24px!important;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+#navSmall .link-active{
+	background-color: var(--nav-background-color);	
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+#navSmall .link-inactive{
+	text-align: center;
+}
+#navSmall a{
+    padding: 12px 24px!important;
+	width: 100%;
+    display: block;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+}
+
+#projectItems{
+	background-color: var(--section-1-background-color);
+}
+#projectItems div div p{
+	color: var(--alt-text-color);
+}
+#projectItems div div p a{
+	color: 	var(--header-text-color);
+}
