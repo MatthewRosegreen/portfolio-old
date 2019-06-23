@@ -1,11 +1,12 @@
 :root {
-	--nav-background-color: #87CEEB!important;
-	--nav-hover-background-color: #00bcd4!important;
-	--header-text-color: #000!important;
-	--header-background-color: #00ffff!important;
-	--section-1-background-color: #00f2f2!important;
-	--section-2-background-color: #00e2e2!important;
-	--alt-text-color: #f1f1f1!important;
+	--nav-background-color: #61892F!important;
+	--nav-hover-background-color: #86C232!important;
+	--header-text-color: #61892F!important;
+	--header-background-color: #222629!important;
+	--section-1-background-color: #474B4F!important;
+	--section-2-background-color: #6B6E70!important;
+	--alt-text-color: #000!important;
+	--fa-image-color: #000!important;
 }
 body,h1,h2,h3,h4,h5,h6 {
 	font-family: "Iceland"!important, sans-serif, font-size:36px;
@@ -20,6 +21,7 @@ header{
 }
 .fa-anchor,.fa-coffee {
 	font-size:200px;
+	color: var(--fa-image-color);
 }
 .display-none{
 	display:none;
@@ -78,7 +80,7 @@ header{
     cursor: pointer;
     white-space: normal;
 }
-#navLarge .link-active:hover,#navSmall .link-active:hover{
+.link-active:hover{
 	background-color: var(--nav-hover-background-color);
 }
 #navLarge{
