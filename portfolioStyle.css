@@ -80,7 +80,7 @@ header{
     cursor: pointer;
     white-space: normal;
 }
-.link-active:hover{
+#navLarge .link-active:hover{
 	background-color: var(--nav-hover-background-color);
 }
 #navLarge{
@@ -113,6 +113,9 @@ header{
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
+}
+#navSmall .link-active:hover{
+	background-color: var(--nav-hover-background-color);
 }
 #navSmall .link-inactive{
 	text-align: center;
