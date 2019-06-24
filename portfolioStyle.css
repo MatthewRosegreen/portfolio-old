@@ -27,6 +27,9 @@ header{
 	font-size:200px;
 	color: var(--fa-image-color);
 }
+.fa-bars{
+	color: var(--alt-text-color);	
+}
 .display-none{
 	display:none;
 }
