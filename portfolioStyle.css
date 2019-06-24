@@ -13,7 +13,7 @@ body,h1,h2,h3,h4,h5,h6 {
 	font-family: "Iceland"!important, sans-serif, font-size:36px;
 }
 h3{
-	var(--heading-text-color);
+	color: var(--heading-text-color);
 }
 .w3-bar,h1,button {
 	font-family: "Audiowide", sans-serif;
