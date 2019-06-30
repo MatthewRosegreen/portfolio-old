@@ -5,7 +5,8 @@ var links = [
 	{pageTitle: "GitHub", className: 'github-link', href: 'https://github.com/MatthewRosegreen/portfolio'}
 ]
 
-function applyHrefConfig() {	
+function applyHrefConfig() {
+	includeHTML();	
 	for(var i = 0; i < links.length; i += 1) {
         if(document.title.startsWith(links[i].pageTitle)) {
             toggleEnablePageLinks(links[i].className, false);
@@ -41,4 +42,4 @@ function forElementsInClass(className, func){
 		func(array[i]);
 	}
 }
-window.onload = applyHrefConfig;
+//window.onload = applyHrefConfig;

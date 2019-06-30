@@ -5,15 +5,11 @@
 	--header-background-color: #222629!important;
 	--section-1-background-color: #474B4F!important;
 	--section-2-background-color: #6B6E70!important;
-	--heading-text-color: #fff!important;
 	--alt-text-color: #f0f0f0!important;
-	--fa-image-color: #86C232!important;
+	--fa-image-color: #000!important;
 }
 body,h1,h2,h3,h4,h5,h6 {
 	font-family: "Iceland"!important, sans-serif, font-size:36px;
-}
-h3{
-	color: var(--heading-text-color);
 }
 .w3-bar,h1,button {
 	font-family: "Audiowide", sans-serif;
@@ -26,9 +22,6 @@ header{
 .fa-anchor,.fa-coffee {
 	font-size:200px;
 	color: var(--fa-image-color);
-}
-.fa-bars{
-	color: var(--alt-text-color);	
 }
 .display-none{
 	display:none;
