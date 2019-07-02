@@ -5,6 +5,7 @@
 	--header-background-color: #222629!important;
 	--section-1-background-color: #474B4F!important;
 	--section-2-background-color: #6B6E70!important;
+	--footer-background-color: #fff!important;
 	--alt-text-color: #f0f0f0!important;
 	--fa-image-color: #000!important;
 }
@@ -14,10 +15,16 @@ body,h1,h2,h3,h4,h5,h6 {
 .w3-bar,h1,button {
 	font-family: "Audiowide", sans-serif;
 }
+#htmlApp{
+	background-color: var(--header-background-color);
+}
 header{
 	color: var(--header-text-color);
     background-color: var(--header-background-color);
 	padding:50px 16px!important;
+}
+body{
+	background-color: var(--footer-background-color);
 }
 .fa-anchor,.fa-coffee {
 	font-size:200px;
