@@ -9,7 +9,8 @@
 <link href="https://fonts.googleapis.com/css?family=Audiowide|Carrois+Gothic+SC|Michroma|Iceland|Orbitron&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="portfolioStyle.css">
 <script type='text/javascript' src='knockout-3.5.0.js'></script>
-
+<script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+<script src="https://d3js.org/d3-fetch.v1.min.js"></script>
 <body>
 <div data-bind="with: navSection" class="w3-top">
   <div id="navLarge" class="w3-bar w3-card w3-left-align w3-large">  
@@ -32,15 +33,9 @@
   </div>
 </div>
 
-
-
-
 <div data-bind="visible: $root.pageId() == 'Home'"><div w3-include-html="https://matthewrosegreen.github.io/portfolio/home.html"></div></div>
 <div data-bind="visible: $root.pageId() == 'About'"><div w3-include-html="https://matthewrosegreen.github.io/portfolio/about.html"></div></div>
 <div data-bind="visible: $root.pageId() == 'Projects'"><div w3-include-html="https://matthewrosegreen.github.io/portfolio/projects.html"></div></div>
-
-
-
 
 <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
     <!-- <h1 class="w3-margin w3-xlarge">Unknown Alias</h1> -->
@@ -56,6 +51,7 @@
 </footer>
 </body>
 <script type='text/javascript' src='nav.js'></script>
+<script type='text/javascript' src='projects.js'></script>
 <script type='text/javascript' src='base.js'></script>
 <script type='text/javascript' src='include.js'></script>
 <script type='text/javascript' src="toggleNav.js"></script>
