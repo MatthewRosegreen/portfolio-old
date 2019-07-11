@@ -34,8 +34,10 @@ var GetCSV = function(){
 					role: d.csvRole,
 					dateCreated: d.csvDateCreated,
 					createdWith: d.csvCreatedWith,
+					descOpener: d.csvOpener,
 					description: d.csvDescription,
 					intent: d.csvIntent,
+					imgType: d.csvImgType,
 					imgBase64: d.csvImgBase64,
 					linkDesc1: d.csvLinkDesc1,
 					linkUrl1: d.csvLinkUrl1,
@@ -51,9 +53,9 @@ var GetCSV = function(){
 
 var PopulateModel = async function() {
 	let result = await GetCSV();
-	console.log(result);
 	projects(new ProjectModel(result));
-	console.log(projects());
+	master.projectsSection(projects());
+	console.log(master.projectsSection());
 };
 
 PopulateModel();
