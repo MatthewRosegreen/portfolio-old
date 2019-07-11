@@ -4,6 +4,7 @@
 </header>
 <div data-bind="visible: $root.projectsSection() !== null && $root.projectsSection().projectsOnDisplay().length > 0">
 	<div data-bind="with: $root.projectsSection">
+		<p data-bind="text: projectsOnDisplay().length"></p>
 		<div data-bind="foreach: projectsOnDisplay" id="projectItems" class="w3-row-padding w3-container project-ongoing">
 			<div class="w3-content">
 				<div class="w3-twothird w3-padding-32">
