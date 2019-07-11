@@ -55,7 +55,7 @@ var PopulateModel = async function() {
 	let result = await GetCSV();
 	projects(new ProjectModel(result));
 	master.projectsSection(projects());
-	console.log(master.projectsSection());
+	console.log(master.projectsSection().projectsOnDisplay());
 };
 
 PopulateModel();
