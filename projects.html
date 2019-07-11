@@ -3,7 +3,7 @@
   <h1 class="w3-margin w3-jumbo">Projects</h1>
 </header>
 <div data-bind="visible: $root.projectsSection() !== null && $root.projectsSection().projectsOnDisplay().length > 0">
-	<div data-bind="with: projectsSection">
+	<div data-bind="with: $root.projectsSection">
 		<div data-bind="foreach: projectsOnDisplay" id="projectItems" class="w3-row-padding w3-container project-ongoing">
 			<div class="w3-content">
 				<div class="w3-twothird w3-padding-32">
