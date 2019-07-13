@@ -24,15 +24,6 @@ var navbar = function(initState)
 		master.projectsSection().populateModel();
 	};
 	
-	self.toggleNav = function() {
-		var x = document.getElementById("navSmall");
-		if (x.className.indexOf("w3-show") == -1) {
-			x.className += " w3-show";
-		} else { 
-			x.className = x.className.replace(" w3-show", "");
-		}
-	};
-	
 	self.applyRelevantClass = function(currentStateId, stateId){
 		if(currentStateId == stateId){
 			return "link-inactive";
@@ -75,6 +66,15 @@ var navbar = function(initState)
 		return self.applyRelevantClass(self.state(), self.githubId());
 	});
 }
+
+var toggleNav = function() {
+	var x = document.getElementById("navSmall");
+	if (x.className.indexOf("w3-show") == -1) {
+		x.className += " w3-show";
+	} else { 
+		x.className = x.className.replace(" w3-show", "");
+	}
+};
 
 var projects = function() {
 	var self = this;
