@@ -92,6 +92,7 @@ var projects = function() {
 						description: ko.observable(d.csvDescription),
 						intent: ko.observable(d.csvIntent),
 						imgType: ko.observable(d.csvImgType),
+						imgHref: ko.observable(d.csvImgHref),
 						imgBase64: ko.observable(d.csvImgBase64),
 						linkDesc1: ko.observable(d.csvLinkDesc1),
 						linkUrl1: ko.observable(d.csvLinkUrl1),
