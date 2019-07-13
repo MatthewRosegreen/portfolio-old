@@ -19,10 +19,13 @@ var navbar = function(initState)
 	self.changePage = function(pageId){
 		master.pageId(pageId);
 		var lowerId = pageId.toLowerCase();
-		$('#' + pageId).load('https://matthewrosegreen.github.io/portfolio/' + lowerId + '.html');
-		$('#footer').load('https://matthewrosegreen.github.io/portfolio/footer.html');
-		master.projectsSection().populateModel();
+		$('#' + pageId).load('https://matthewrosegreen.github.io/portfolio/' + lowerId + '.html', function(){
+			self.isProjectsVisible(pageId == 'Projects');			
+		});
+		$('#footer').load('https://matthewrosegreen.github.io/portfolio/footer.html');		
 	};
+	
+	self.isProjectsVisible = ko.observable(false);
 	
 	self.applyRelevantClass = function(currentStateId, stateId){
 		if(currentStateId == stateId){
@@ -124,6 +127,7 @@ master.navSection(new navbar(master.pageId));
 master.projectsSection(new projects());
 
 $(document).ready(function() {
+	master.projectsSection().populateModel();
 	ko.applyBindings(master, document.getElementById("htmlApp"));
     master.navSection().changePage(master.navSection().indexId());
 });

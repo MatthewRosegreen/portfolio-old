@@ -36,7 +36,7 @@
 
 <div data-bind="attr: {id: $root.pageId()}"></div>
 
-<div data-bind="visible: $root.pageId() == 'Projects'">
+<div data-bind="visible: $root.navSection().isProjectsVisible">
 	<div data-bind="with: $root.projectsSection">
 		<div data-bind="visible: projectsOnDisplay().length > 0, foreach: projectsOnDisplay" id="projectItems" class="w3-row-padding w3-container project-ongoing">
 			<div class="w3-content">
