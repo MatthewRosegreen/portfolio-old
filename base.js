@@ -21,6 +21,7 @@ var navbar = function(initState)
 		var lowerId = pageId.toLowerCase();
 		$('#' + pageId).load('https://matthewrosegreen.github.io/portfolio/' + lowerId + '.html');
 		$('#footer').load('https://matthewrosegreen.github.io/portfolio/footer.html');
+		master.projectsSection().populateModel();
 	};
 	
 	self.toggleNav = function() {
@@ -124,6 +125,5 @@ master.projectsSection(new projects());
 
 $(document).ready(function() {
 	ko.applyBindings(master, document.getElementById("htmlApp"));
-	master.projectsSection().populateModel();	
     master.navSection().changePage(master.navSection().indexId());
 });
